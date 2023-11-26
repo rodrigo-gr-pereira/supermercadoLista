@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermercado</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            background-color: aqua;
+            text-align: center;
+            color: white;
+            padding: 20px 0;
+        }
+
+        .lista-cadastro{
+            display: flex;
+            margin: 20px 0;
+            padding: 0 20px;
+        }
+        .lista-cadastro input[type=text]{
+            flex: 1;
+            height: 40px;
+            padding-left: 20px;
+        }
+        .lista-produto-single{
+            padding: 10px 0;
+            margin: 20px 0;
+            border-bottom: 1px solid #ccc;
+            display: flex;  
+        }
+        .lista-produto-single h3{
+            flex: 1;
+            padding: 0 auto;
+        }
+        h3.price-produto{
+            text-align: right;
+            font-size: 13px;
+        }
+        h3.price-produto > span{
+            background-color: aqua;
+            padding: 8px 10px;
+            border-radius: 10px;
+            color: white;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>App lista de Supermercado</h2>
+    </header>
+    <div class="lista-cadastro">
+        <input type="text"
+            placeholder="nome do produto" 
+            name="nome_produto">
+        <input type="text" 
+        placeholder="valor do produto" 
+        name="valor_produto">
+        <input type="submit" name="acao" value="cadastrar">
+    </div>
+
+    <div class="lista-produtos">
+        <div class="lista-produto-single">
+            <h3>Red Bull</h3>
+            <h3 class="price-produto"><span>R$20,00</span></h3>
+        </div>
+        <div class="lista-produto-single">
+            <h3>Red Bull</h3>
+            <h3 class="price-produto"><span>R$20,00</span></h3>
+        </div>
+        <div class="lista-produto-single">
+            <h3>Red Bull</h3>
+            <h3 class="price-produto"><span>R$20,00</span></h3>
+        </div>
+        <div class="lista-produto-single">
+            <h3>Red Bull</h3>
+            <h3 class="price-produto"><span>R$20,00</span></h3>
+        </div>
+    </div>
+    <script>
+
+
+    </script>
+</body>
+</html>
